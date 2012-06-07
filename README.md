@@ -110,8 +110,13 @@ etcet-dots repo) for the `...trace` function.
 Bash Sequence
 -------------
 
-rking doesn't really care about Bash, so he hasn't set this up in its
-entirety.
+The Etcet `.bashrc` first loads `~/.sh/*`, then loops over `~/.sh/*`, then
+loops over all the `*-dots` repos looking for `.bashrc`s within that.
+
+(It also does a few things with `~/.bashrc..`, but we mostly have these
+features replicated through the normal system.)
+
+The current `.profile` is not very refined. (TODO)
 
 Pair Up
 -------
