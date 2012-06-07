@@ -110,8 +110,11 @@ etcet-dots repo) for the `...trace` function.
 Bash Sequence
 -------------
 
-The Etcet `.bashrc` first loads `~/.sh/*`, then loops over `~/.sh/*`, then
-loops over all the `*-dots` repos looking for `.bashrc`s within that.
+The Etcet `.bashrc` will load:
+
+- Everything in `~/.sh/*`, then
+- Everything in `~/.bash/*`, then
+- Any `.bashrc` found in the `~/.../src/*` dirs (in order from `~/.../conf`)
 
 (It also does a few things with `~/.bashrc..`, but we mostly have these
 features replicated through the normal system.)
