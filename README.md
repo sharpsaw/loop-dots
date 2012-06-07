@@ -1,14 +1,14 @@
-boot-dots
-=========
+etcet-dots
+==========
 
 A looping set of scripts to allow many
 [...](http://github.com/ingydotnet/....git) repos to play along nicely.
 
 This should go high up in the `~/.../conf`, so that its dot-files take
 precedence over the other repos (but, don't worry - the others will still get
-sourced. In fact, that's the whole point of boot-dots!)
+sourced. In fact, that's the whole point of etcet-dots!)
 
-By convention, repos that are designed to be used after boot-dots are all
+By convention, repos that are designed to be used after etcet-dots are all
 named `*-dots`.
 
 \[Note: Throughout this document, we refer to the files as being in `~/.../`,
@@ -33,7 +33,7 @@ with both scripting and interactive shelling. They are all named
 
 These tools are, from the vantage point of `...`, all "opt-in" - unless you
 source `~/.../lib/___`, they stay out of your way. But, when you're using
-boot-dots, you're definitely opted-in (that is, both `.bashrc` and `.zshenv`
+etcet-dots, you're definitely opted-in (that is, both `.bashrc` and `.zshenv`
 source `~/.../lib/basics`).
 
 Let's look at a few of the functions:
@@ -85,7 +85,7 @@ Here is a cheat-sheet:
           ↓
        .zlogin
 
-Now, boot-dots makes this system even more "interesting" by checking for the
+Now, etcet-dots makes this system even more "interesting" by checking for the
 above files in all -dots repos, plus adding the ~/.zsh dir to facilitate
 organization (and nice, atomic names).
 
@@ -96,7 +96,7 @@ The following dirs correspond to the above files:
     ~/.zsh/login/
 
 So you can create my-dots/.zsh/rc/my-aptly-named-thing and trust that it gets
-sourced as part of boot-dots/.zshrc. If you need something to happen early or
+sourced as part of etcet-dots/.zshrc. If you need something to happen early or
 late relative to the others, you can always prefix with `00-___` or `zzz-___`.
 
 Additionally, there is a .sh/ dir that is similar to .zsh/rc, but is for
@@ -105,7 +105,7 @@ good to try for that).
 
 `...` itself comes with some tracing tools to sourt this out, a bit. Look in
 ~/.../lib/tracefuncs (which is avilable by default if you are using the
-boot-dots repo) for the `...trace` function.
+etcet-dots repo) for the `...trace` function.
 
 Bash Sequence
 -------------
@@ -116,7 +116,7 @@ entirety.
 Pair Up
 -------
 
-Once you get on board with `boot-dots`, you can much more easily work with
+Once you get on board with `etcet-dots`, you can much more easily work with
 other programmers' favorite configs. This is the main reason behind this
 system, in fact.
 
