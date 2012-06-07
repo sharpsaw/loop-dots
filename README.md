@@ -2,7 +2,7 @@ etcet-dots
 ==========
 
 A looping set of scripts to allow many
-[...](http://github.com/ingydotnet/....git) repos to play along nicely.
+[`...`](http://github.com/ingydotnet/....git) repos to play along nicely.
 
 This should go high up in the `~/.../conf`, so that its dot-files take
 precedence over the other repos (but, don't worry - the others will still get
@@ -27,7 +27,7 @@ work as we revise our process.
 Tools
 -----
 
-There are some [...](http://github.com/ingydotnet/....git) tools that help
+There are some [`...`](http://github.com/ingydotnet/....git) tools that help
 with both scripting and interactive shelling. They are all named
 `...<something>`, so you can tab-complete to see what is available.
 
