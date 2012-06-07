@@ -2,7 +2,7 @@ call pathogen#infect()
 
 " Loop over every ~/.../src/* repo and source their .vimrc
 for dotdir in split(expand("$DOTDOTDOT_ORDER"), ' ')
-    if -1 == match(dotdir, "etcet-dots")
+    if -1 == match(dotdir, "loop-dots")
       let s:vimrc = dotdir.'/.vimrc'
       if filereadable(s:vimrc)
         " echo "…sourcing" s:vimrc
