@@ -9,6 +9,7 @@ source $DOTDOTDOT_ROOT/lib/basics
 ...quieteach ...sourceif .bashrc
 
 # Backwards compatibility:
+source ~/.../lib/path-manip.sh
 sourceif ~/.bashrc../common
 sourceif ~/.bashrc../local
 sourceif ~/.bashrc../$USER
