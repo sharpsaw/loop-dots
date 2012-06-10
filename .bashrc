@@ -1,5 +1,4 @@
-DOTDOTDOT_ROOT=${DOTDOTDOT_ROOT:-$HOME/...}
-source $DOTDOTDOT_ROOT/lib/basics
+source ~/.../lib/basics
 
 ...sourcedircontents ~/.sh # Common with zsh
 ...sourcedircontents ~/.bash
@@ -8,7 +7,7 @@ source $DOTDOTDOT_ROOT/lib/basics
 ...quieteach ...sourceif .bashrc
 
 # Backwards compatibility:
-source $DOTDOTDOT_ROOT/lib/path-manip.sh
+source ~/.../lib/path-manip.sh
 sourceif ~/.bashrc../common
 sourceif ~/.bashrc../local
 sourceif ~/.bashrc../$USER
