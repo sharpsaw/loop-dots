@@ -1,3 +1,5 @@
+source ~/.../lib/assert-decent-shell || return
+
 source ~/.../lib/basics
 
 ...sourcedircontents ~/.sh # Common with zsh
