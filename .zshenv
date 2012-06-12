@@ -1,5 +1,8 @@
 source ~/.../lib/basics
 ...quieteach ...sourceif .zshenv
 ...sourcedircontents ~/.zsh/env
-[ -d ~/.rbenv ] && export PATH="$HOME/.rbenv/bin:$PATH"
+
+# Pull in rbenv. Add sharpsaw/ruby-dots and do ,rbenvi for quick install.
+[ -d ~/.rbenv ] && ...path-prepend ~.rbenv/bin
 type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
+[ "-rauto_gem" = "$RUBYOPT" ] && unset RUBYOPT
