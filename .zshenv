@@ -1,8 +1,13 @@
 source ~/.../lib/tracefuncs
 ...filestart .zshenv
 source ~/.../lib/scripting
+source ~/.../lib/path-manip
 ...eachsource .zshenv
 ...sourcedircontents ~/.zsh/env
+
+# This is a hackish thing. zsh restores print_exit_value after function calls,
+# so it's impossible to set it via anything above.
+setopt print_exit_value
 
 # Pull in rbenv.
 # (Add sharpsaw/ruby-dots and do ,rbenvi for quick install.)
