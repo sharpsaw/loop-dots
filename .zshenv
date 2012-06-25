@@ -1,7 +1,6 @@
 source ~/.../lib/tracefuncs
 ...filestart .zshenv
-source ~/.../lib/scripting
-source ~/.../lib/path-manip
+source ~/.../lib/basics
 ...eachsource .zshenv
 ...sourcedircontents ~/.zsh/env
 
