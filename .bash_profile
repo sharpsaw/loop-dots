@@ -1,3 +1,5 @@
+source ~/.../lib/basics
+
 # Pull in rbenv.
 # (Add sharpsaw/ruby-dots and do ,rbenvi for quick install.)
 [ -d ~/.rbenv ] && ...path-prepend ~/.rbenv/bin
