@@ -14,11 +14,12 @@ named `*-dots`.
 ---
 
 The easiest way to understand how to make your own setup is to mimic
-http://github.com/ouicode/rkingy-dots-conf
 
-Note that the system is still in flux, and we already have plans on how to
-make it better. Still, if you copy what is done there, it should continue to
-work as we revise our process.
+http://sharpsaw.org/init
+
+…which is a short script that downloads `...` then my `.../conf` file, then
+runs `... install`. Those three tasks are pretty much the entirety of the work
+needed to use this system well (even if you do each manually, it's not so bad.)
 
 Tools
 -----
