@@ -2,15 +2,19 @@ call pathogen#infect()
 
 fun! EnsureVamIsOnDisk(vam_install_path)
   if !filereadable(a:vam_install_path.'/vim-addon-manager/.git/config')
-     \&& 1 == confirm("Clone VAM into ".a:vam_install_path."?","&Y\n&N")
     call mkdir(a:vam_install_path, 'p')
-    execute '!git clone --depth=1 git://github.com/MarcWeber/vim-addon-manager '
-      \ .shellescape(a:vam_install_path, 1).'/vim-addon-manager'
+    call system(
+      \'git clone --depth=1 git://github.com/MarcWeber/vim-addon-manager '
+      \.shellescape(a:vam_install_path, 2).'/vim-addon-manager')
     exec 'helptags '.fnameescape(a:vam_install_path.'/vim-addon-manager/doc')
   endif
 endf
 
 let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
+let g:vim_addon_manager = {
+  \'shell_commands_run_method': 'system',
+  \'auto_install': 1,
+  \}
 call EnsureVamIsOnDisk(vam_install_path)
 exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
 
