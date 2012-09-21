@@ -1,5 +1,4 @@
-#!/bin/zsh
-...toggle_zsh_init_echos() {(
+(
     set -xe
     [ -d ~/.zsh ]
     subdirs=(.zsh/env .zsh/profile .sh .zsh/rc .zsh/login)
@@ -9,7 +8,7 @@
         done
     else
         for n in $subdirs; do
-            echo 'echo "+ In $0"' >| ~/$n/_echo
+            echo 'echo "+ In $n"' >| ~/$n/_echo || true
         done
     fi
-)}
+)
