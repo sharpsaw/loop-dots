@@ -1,5 +1,5 @@
 #!/bin/sh
 ...install() {
-    ( set -xe; ... install -s )
+    ( set -xe; ~/.../... install -s )
     hash -r
 }
