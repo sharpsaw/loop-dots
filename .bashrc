@@ -10,7 +10,9 @@ source ~/.../lib/basics
 
 # Backwards compatibility:
 source ~/.../lib/path-manip.sh
-sourceif ~/.bashrc../common
-sourceif ~/.bashrc../local
-sourceif ~/.bashrc../$USER
-[ -n "$LOCAL" ] && sourceif ~/.bashrc../$LOCAL
+if [ -d ~/.bashrc.. ]; then
+    sourceif ~/.bashrc../common
+    sourceif ~/.bashrc../local
+    sourceif ~/.bashrc../$USER
+    [ -n "$LOCAL" ] && sourceif ~/.bashrc../$LOCAL
+fi
