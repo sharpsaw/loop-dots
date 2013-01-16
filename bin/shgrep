@@ -1,0 +1,15 @@
+#!/bin/sh -e
+[ $# -gt 0 ] || (echo Need pattern to match. && false)
+dirs=~/.sh
+if expr $SHELL : '.*zsh' >/dev/null; then
+  dirs="$dirs ~/.zsh"
+elif expr $SHELL : '.*bash' >/dev/null; then
+  dirs="$dirs ~/.zsh"
+fi
+cmd='grep -r'
+if which ag >/dev/null; then
+    cmd=ag
+else
+    echo "Install the_silver_search for faster searches."
+fi
+$cmd "$1" $dirs
