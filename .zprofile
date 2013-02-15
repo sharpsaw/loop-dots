@@ -1,3 +1,6 @@
+[[ -z $already_looped_zprofile ]] || return
+already_looped_zprofile=1
+
 source ~/.../lib/tracefuncs
 ...filestart .zprofile
 source ~/.../lib/scripting

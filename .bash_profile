@@ -1,5 +1,8 @@
+[[ -z $already_looped_bash_profiles ]] || return
+already_looped_bash_profiles=1
+
 source ~/.../lib/basics
 # Get ~/.../src/your-dots/.bash_profile, etc.
-...quieteach ...sourceif .bash_profile
+...eachsource .bash_profile
 
 ...sourceif ~/.bashrc

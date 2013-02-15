@@ -1,4 +1,6 @@
 source ~/.../lib/assert-decent-shell || return
+[[ -z $already_looped_bashrcs ]] || return
+already_looped_bashrcs=1
 
 source ~/.../lib/basics
 
@@ -6,9 +8,7 @@ source ~/.../lib/basics
 ...sourcedircontents ~/.bash
 
 # Get ~/.../src/your-dots/.bashrc, etc.
-...quieteach ...sourceif .bashrc
-
-
+...eachsource .bashrc
 
 # XXX
 # The stuff below needs to be deprecated and eventually removed. I(ngy) am
