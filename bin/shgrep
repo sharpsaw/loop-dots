@@ -2,9 +2,9 @@
 [ $# -gt 0 ] || (echo Need pattern to match. && false)
 dirs=~/.sh
 if expr $SHELL : '.*zsh' >/dev/null; then
-  dirs="$dirs ~/.zsh"
+  dirs="$dirs $HOME/.zsh"
 elif expr $SHELL : '.*bash' >/dev/null; then
-  dirs="$dirs ~/.zsh"
+  dirs="$dirs $HOME/.bash"
 fi
 cmd='grep -r'
 if which ag >/dev/null; then
