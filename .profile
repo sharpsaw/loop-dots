@@ -1,3 +1,4 @@
+source ~/.../lib/scripting
 for n in \
     ~/.profile-common \
     ~/.profile-local \
