@@ -1,3 +1,9 @@
+" You can disable installed vim plugins by putting them in this env var:
+let g:pathogen_disabled = []
+for disable in split(expand("$VIM_PATHOGEN_DISABLE"), ' ')
+  call add(g:pathogen_disabled, disable)
+endfor
+
 call pathogen#infect()
 
 " Loop over every ~/.../src/* repo and source their .vimrc
