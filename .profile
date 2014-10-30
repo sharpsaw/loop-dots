@@ -5,5 +5,5 @@ for n in \
     ~/.profile-$USER \
     ~/.profile-$LOCAL
 do
-    ...source-if $n
+    ...sourceif $n
 done
