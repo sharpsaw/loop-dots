@@ -15,7 +15,7 @@ named `*-dots`.
 
 The easiest way to understand how to make your own setup is to mimic
 
-http://sharpsaw.org/init
+https://github.com/sharpsaw/sharpsaw.org/blob/master/arpen
 
 …which is a short script that downloads `...` then my `.../conf` file, then
 runs `... install`. Those three tasks are pretty much the entirety of the work
