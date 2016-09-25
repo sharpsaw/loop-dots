@@ -4,7 +4,7 @@ for disable in split(expand("$VIM_PATHOGEN_DISABLE"), ' ')
   call add(g:pathogen_disabled, disable)
 endfor
 
-call pathogen#infect()
+execute pathogen#infect()
 
 " Loop over every ~/.../src/* repo and source their .vimrc
 let loop_dots_verbose=0
