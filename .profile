@@ -1,4 +1,4 @@
-source ~/.../lib/scripting
+source ~/.ontic/lib/scripting
 for n in \
     ~/.profile-common \
     ~/.profile-local \
