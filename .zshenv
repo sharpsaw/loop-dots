@@ -1,9 +1,9 @@
 [[ -z $already_looped_zshenvs ]] || return
 already_looped_zshenvs=1
 
-source ~/.../lib/tracefuncs
+source ~/.ontic/lib/tracefuncs
 ...filestart .zshenv
-source ~/.../lib/basics
+source ~/.ontic/lib/basics
 ...eachsource .zshenv
 ...sourcedircontents ~/.zsh/env
 

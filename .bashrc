@@ -1,8 +1,8 @@
-source ~/.../lib/assert-decent-shell || return
+source ~/.ontic/lib/assert-decent-shell || return
 [[ -z $already_looped_bashrcs ]] || return
 already_looped_bashrcs=1
 
-source ~/.../lib/basics
+source ~/.ontic/lib/basics
 
 ...sourcedircontents ~/.sh # Common with zsh
 ...sourcedircontents ~/.bash
