@@ -5,7 +5,10 @@ already_looped_bashrcs=1
 source ~/.../lib/basics
 
 ...sourcedircontents ~/.sh # Common with zsh
-...sourcedircontents ~/.bash
+
+if [ -d ~/.bash ]; then
+  ...sourcedircontents ~/.bash
+fi
 
 # Get ~/.../src/your-dots/.bashrc, etc.
 ...eachsource .bashrc
